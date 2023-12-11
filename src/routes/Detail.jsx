@@ -42,7 +42,7 @@ function Detail() {
             <img
               src={data.flags.svg}
               alt={data.flags.alt}
-              className="w-[27rem] md:w-[35rem] h-60 md:h-80 lg:w-[38rem] lg:h-96"
+              className="w-[27rem] md:w-[35rem] h-60 md:h-80 lg:w-[38rem] lg:h-96 transition-shadow duration-300 hover:shadow-md"
             />
           </div>
           <div className="mt-10 lg:w-1/2 dark:text-white lg:mt-0">
@@ -113,7 +113,7 @@ function Detail() {
                         <Link
                           to={`/${code}`}
                           key={code}
-                          className="py-2 px-6 text-center text-sm shadow-lg dark:bg-dark-element"
+                          className="py-2 px-6 text-center text-sm shadow-lg dark:bg-dark-element hover:font-semibold"
                         >
                           {targetCountry.name.common}
                         </Link>

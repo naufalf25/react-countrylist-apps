@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
       <button
         onClick={handleDarkModeEvent}
-        className="flex gap-2 items-center text-sm font-semibold md:text-base lg:text-lg dark:text-white"
+        className="flex gap-2 items-center text-sm font-semibold md:text-base lg:text-lg dark:text-white hover:opacity-70"
       >
         {dark ? (
           <>
