@@ -1,6 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function CountryItem({ item }) {
   return (
-    <div className="w-72 rounded-md shadow-md dark:bg-dark-element dark:text-white">
+    <Link
+      to={`/${item.cca3}`}
+      className="w-72 rounded-md shadow-md dark:bg-dark-element dark:text-white"
+    >
       <div>
         <img
           src={item.flags.png}
@@ -23,7 +28,7 @@ function CountryItem({ item }) {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

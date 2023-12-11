@@ -35,4 +35,23 @@ const getCountryByRegion = async (region) => {
   return data;
 };
 
-export { getAllCountries, getCountryByName, getCountryByRegion };
+const getCountryNameByCode = async (code) => {
+  const response = await fetch(`https://restcountries.com/v3.1/alpha/${code}`);
+  console.log(await response.json());
+
+  if (!response.ok) {
+    throw new Error('Something went wrong!');
+  }
+
+  const data = response.json()[0];
+  console.log(data);
+  const countryName = data.name.common;
+  return countryName;
+};
+
+export {
+  getAllCountries,
+  getCountryByName,
+  getCountryByRegion,
+  getCountryNameByCode,
+};
