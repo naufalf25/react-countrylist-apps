@@ -30,7 +30,6 @@ Users should be able to:
 
 - [React-Vite](https://vitejs.dev)
 - [Tailwind CSS](https://tailwindcss.com)
-- [TypeScript](https://www.typescriptlang.org)
 
 ## Author
 
