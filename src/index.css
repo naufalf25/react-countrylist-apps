@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  @apply dark-transition dark:bg-dark-bg;
+}
+
+.dark-transition {
+  @apply transition-all duration-300
+}
