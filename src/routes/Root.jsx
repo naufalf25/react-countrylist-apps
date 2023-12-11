@@ -57,7 +57,13 @@ export class Root extends Component {
     });
 
     try {
-      const data = await getCountryByName(keyword.toLowerCase());
+      let data;
+      if (keyword.length > 0) {
+        data = await getCountryByName(keyword.toLowerCase());
+      } else {
+        data = await getAllCountries();
+      }
+
       const sortByAlphabet = data.sort((a, b) => {
         if (a.name.common < b.name.common) {
           return -1;

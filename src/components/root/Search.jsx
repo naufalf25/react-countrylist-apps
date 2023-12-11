@@ -44,7 +44,7 @@ export class Search extends Component {
             onChange={this.onSearchChangeHandler}
             onKeyDown={this.onKeyDownHandler}
             placeholder="Search for a country..."
-            className="text-light-input font-semibold focus:outline-none dark:bg-dark-element dark:text-white"
+            className="font-semibold focus:outline-none dark:bg-dark-element dark:text-white"
           />
         </div>
       </div>
